@@ -8,32 +8,21 @@ namespace MyTestProjects
 {
     class Student
     {
-        public static void Login()
+
+        public string Name;
+        public string Surname;
+        public int TCNo;
+
+
+        public void Write()
         {
-            Console.Write("[ Name ] => ");
-            string name = Console.ReadLine();
-            Console.Write("[ Surname ] => ");
-            string surname = Console.ReadLine();
-            Console.Write("[ T.C No ] => ");
-            int tcno = Convert.ToInt32(Console.ReadLine());
+            Console.Title = "E-Okul Account";
             Console.Clear();
-
-            Console.WriteLine(" [ ——————————— [ E-okul Account ] ——————————— ]");
-
-            finish();
-            void finish()
-            {
-                Console.WriteLine("[ Name ] => " + name);
-                Console.WriteLine("[ Surname ] => " + surname);
-                Console.WriteLine("[ T.C No ] => " + tcno);
-
-            }
-
-
-
+            Console.WriteLine(" [ ——————————— [ E-Okul Account ] ——————————— ] ");
+            Console.WriteLine("[ Name ] => " + Name);
+            Console.WriteLine("[ Surname ] => " + Surname);
+            Console.WriteLine("[ T.C No ] => " + TCNo);
         }
-
-
 
     }
 }

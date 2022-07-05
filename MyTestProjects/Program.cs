@@ -10,18 +10,34 @@ namespace MyTestProjects
     {
         static void Main(string[] args)
         {
-            
 
-            Console.WriteLine(" [ ——————————— [ E-okul Login ] ——————————— ]");
+            Console.Title = "E-Okul Login"; 
 
-            Student.Login();
-            
+
+            Console.WriteLine(" [ ——————————— [ E-okul Login ] ——————————— ] ");
+
+
+            Student student = new Student();
+
+            Console.Write("[ Name ] => ");
+            student.Name = Console.ReadLine();
+            Console.Write("[ Surname ] => ");
+            student.Surname = Console.ReadLine();
+            Console.Write("[ T.C No ] => ");
+            student.TCNo = Convert.ToInt32(Console.ReadLine());
+
+            student.Write();
+
+
+
+
+
 
 
             Console.Read();
         }
 
 
-   
+
     }
 }
