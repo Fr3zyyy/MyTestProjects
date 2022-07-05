@@ -10,17 +10,18 @@ namespace MyTestProjects
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" [ ——————————— [ E-okul Giriş ] ——————————— ]");
+            
+
+            Console.WriteLine(" [ ——————————— [ E-okul Login ] ——————————— ]");
+
             Student.Login();
+            
 
 
             Console.Read();
         }
 
 
-        void finish()
-        {
-
-        }
+   
     }
 }

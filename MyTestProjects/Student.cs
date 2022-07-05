@@ -16,9 +16,23 @@ namespace MyTestProjects
             string surname = Console.ReadLine();
             Console.Write("[ T.C No ] => ");
             int tcno = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
+
+            Console.WriteLine(" [ ——————————— [ E-okul Account ] ——————————— ]");
+
+            finish();
+            void finish()
+            {
+                Console.WriteLine("[ Name ] => " + name);
+                Console.WriteLine("[ Surname ] => " + surname);
+                Console.WriteLine("[ T.C No ] => " + tcno);
+
+            }
+
 
 
         }
+
 
 
     }
